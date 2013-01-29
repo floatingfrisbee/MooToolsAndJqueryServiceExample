@@ -1,4 +1,4 @@
-﻿namespace MootoolsPostTester.ViewModels
+﻿namespace MootoolsAndJQueryServiceExample.ViewModels
 {
     public class Person
     {
