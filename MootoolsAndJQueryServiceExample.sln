@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MootoolsPostTester", "MootoolsPostTester\MootoolsPostTester.csproj", "{5BECF9C0-A9D2-424C-A1A9-FE5FEAC63449}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MootoolsAndJQueryServiceExample", "MootoolsPostTester\MootoolsAndJQueryServiceExample.csproj", "{5BECF9C0-A9D2-424C-A1A9-FE5FEAC63449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

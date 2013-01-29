@@ -1,6 +1,6 @@
 ﻿function OnPressMeSimpleMoo() {
     var args = new Object();
-    args.stuff = 'Terminator';
+    args.stuff = 'A Compact JavaScript Framework';
 
     var req = new Request.JSON({
         url: '/home/savestuff',
@@ -10,18 +10,15 @@
         data: args
     });
 
-//    req.setHeader('Content-Type', 'application/json; charset=utf-8');
-//    req.post(JSON.encode(args));
-
     req.send();
 }
 
 function OnPressMeComplexMoo() {
     var args = new Object();
     args.Name = 'Vince';
-    args.Age = 23;
+    args.Age = 34;
     args.Address = new Object();
-    args.Address.Street = '321 E 90TH ST APT 2B';
+    args.Address.Street = '32 E 23RD ST APT F';
     args.Address.City = 'New York';
     args.Address.State = 'NY';
     args.Address.Country = 'USA';
@@ -43,9 +40,9 @@ function OnPressMeListMoo() {
     var args = new Object();
 
     args.listOfStuff = [];
-    args.listOfStuff[0] = "Ken";
-    args.listOfStuff[1] = "Jaspreet";
-    args.listOfStuff[2] = "Vince";
+    args.listOfStuff[0] = "Christoph Pojer";
+    args.listOfStuff[1] = "David Walsh";
+    args.listOfStuff[2] = "Darren Waddell";
 
     var req = new Request.JSON({
         url: '/home/savealistofstuff',
@@ -61,7 +58,7 @@ function OnPressMeListMoo() {
 }
 
 function OnSuccessMoo(data1, data2, data3) {
-    alert('Moo: ' + data1);
+    alert('Moo: ' + data1.Message);
 }
 
 function OnFailureMoo(data1, data2, data3) {
