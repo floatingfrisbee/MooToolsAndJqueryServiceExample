@@ -1,0 +1,95 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Caliburn
+*.tmp
+
+#Visual Studio files
+*.build.csdef
+[Uu]pgrade[Ll]og*.[Xx][Mm][Ll]
+*.Publish.xml
+*.[Oo]bj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+ipch/
+csx/
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+_UpgradeReport_Files/
+ConfigFiles/
+
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+
+#Project files
+[Bb]uild/
+
+#Subversion files
+.svn
+
+# Office Temp Files
+~$*
+
+# minified files
+_minified.css
+_minified.js
+_minifiedstatic.css
+_minifiedstatic.js
+
+# lightswitch specific
+*.lsproj.user
+ServiceConfiguration.cscfg
+*/_Pvt_Extensions/*
+LightSwitchCRM/Server/GeneratedArtifacts/*
+LightSwitchCRM/Client/GeneratedArtifacts/*
+LightSwitchCRM/Common/GeneratedArtifacts/*
+LightSwitchCRM/Client/ModelManifest.xml
+LightSwitchCRM/Server/ModelManifest.xml
+LightSwitchCRM/Server/Web/DotAlignCRM.Client.xap
+*.csproj.user
+*.vbproj.user
+*/[Oo]bj/*
+*/[Bb]in/*
+*.suo
+*DXCore.Solution
+[Tt]humbs.db 
+*.user
+*.bak.* 
+*.bak 
+*.[Cc]ache
+*/[Pp]ublish/*
+*.vssscc
+*.vs10x
+*/[Dd]otfuscated/*
+[Dd]otfuscated/*
+*.vsp
+[Nn][Dd]epend[Oo]ut/*
+*.licx
+*.docstates
+*.cscfg
+*.csdef
+
+#RIA specific
+RIADataSource/Generated_Code/*
