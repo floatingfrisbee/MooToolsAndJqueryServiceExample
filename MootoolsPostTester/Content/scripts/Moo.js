@@ -57,10 +57,10 @@ function OnPressMeListMoo() {
     req.send(JSON.encode(args));
 }
 
-function OnSuccessMoo(data1, data2, data3) {
-    alert('Moo: ' + data1.Message);
+function OnSuccessMoo(result) {
+    alert('Moo: ' + result.Message);
 }
 
-function OnFailureMoo(data1, data2, data3) {
-    alert('Moo: ' + data1);
+function OnFailureMoo(result) {
+    alert('Moo: ' + result);
 }

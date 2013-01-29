@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using MootoolsPostTester.ViewModels;
 
-namespace MootoolsPostTester.Controllers
+namespace MootoolsAndJQueryServiceExample.Controllers
 {
     public class HomeController : Controller
     {
@@ -16,39 +16,34 @@ namespace MootoolsPostTester.Controllers
         [HttpPost]
         public ActionResult SaveStuff(string stuff)
         {
-            var mystring = stuff;
+            if (string.IsNullOrWhiteSpace(stuff))
+                throw new Exception("We should have gotten a valid string");
 
-            if (null != mystring && mystring.ToCharArray().Any(chara => chara == 100))
-            {
-                throw new NotImplementedException();
-            }
+            // Do stuff with the string
 
-            return Json(new {success = true, message = "You the man!"});
+            return Json(new {Success = true, Message = string.Format("Got {0}!", stuff)});
         }
 
         [HttpPost]
         public ActionResult SaveComplexStuff(Person person)
         {
-            if (null != person && person.Name == "Jaspreet")
-            {
-                throw new NotImplementedException();
-            }
+            if (null == person)
+                throw new Exception("We should have gotten a valid person object");
+            
+            // Do stuff with person
 
-            return Json(new { success = true, message = "You the man!" });
+            return Json(new { Success = true, Message = string.Format("Got {0}!", person.Name) });
         }
 
         [HttpPost]
         public ActionResult SaveAListOfStuff(IEnumerable<string> listOfStuff)
         {
-            if (null != listOfStuff)
-            {
-                if (listOfStuff.Any(item => item == "opspark"))
-                {
-                    throw new NotImplementedException();
-                }
-            }
+            if (null == listOfStuff || !listOfStuff.Any())
+                throw new Exception("We should have gotten a list with atleast one element in it.");
 
-            return Json(new { success = true, message = "You the man!" });
+            // Do stuff with the list
+
+            return Json(new { Success = true, Message = string.Format("Got {0}!", listOfStuff.Aggregate((a, b) => string.Format("{0}, {1}", a, b))) });
         }
     }
 }

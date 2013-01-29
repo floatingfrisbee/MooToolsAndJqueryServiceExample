@@ -71,8 +71,8 @@
     <Compile Include="ViewModels\Person.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\scripts\appJay.js" />
-    <Content Include="Content\scripts\appMoo.js" />
+    <Content Include="Content\scripts\JQu.js" />
+    <Content Include="Content\scripts\Moo.js" />
     <Content Include="Scripts\jquery-1.5.1.min.js" />
     <Content Include="Scripts\json2.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -116,7 +116,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

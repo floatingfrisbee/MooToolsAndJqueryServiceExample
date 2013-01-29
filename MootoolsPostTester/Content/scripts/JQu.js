@@ -1,4 +1,4 @@
-﻿function OnPressMeSimpleJay() {
+﻿function OnPressMeSimpleJQuery() {
     var args = new Object();
     args.stuff = 'Write Less Do More';
 
@@ -6,12 +6,12 @@
         url: '/home/savestuff',
         type: 'POST',
         data: args,
-        success: OnSuccessJay,
-        error: OnFailureJay
+        success: OnSuccessJQuery,
+        error: OnFailureJQuery
     });
 }
 
-function OnPressMeComplexJay() {
+function OnPressMeComplexJQuery() {
     var args = new Object();
     args.Name = 'Vince';
     args.Age = 23;
@@ -26,12 +26,12 @@ function OnPressMeComplexJay() {
         type: 'POST',
         data: JSONDC.stringify(args),
         contentType: 'application/json; charset=utf-8',
-        success: OnSuccessJay,
-        error: OnFailureJay
+        success: OnSuccessJQuery,
+        error: OnFailureJQuery
     });
 }
 
-function OnPressMeListJay() {
+function OnPressMeListJQuery() {
     var args = new Object();
 
     args.listOfStuff = [];
@@ -44,15 +44,15 @@ function OnPressMeListJay() {
         type: 'POST',
         data: JSONDC.stringify(args),
         contentType: 'application/json; charset=utf-8',
-        success: OnSuccessJay,
-        error: OnFailureJay
+        success: OnSuccessJQuery,
+        error: OnFailureJQuery
     });
 }
 
-function OnSuccessJay(data1, data2, data3) {
-    alert('JayQ: ' + data1.Message);
+function OnSuccessJQuery(result) {
+    alert('JQuery: ' + result.Message);
 }
 
-function OnFailureJay(data1, data2, data3) {
-    alert('JayQ: ' + data1);
+function OnFailureJQuery(result) {
+    alert('JQuery: ' + result);
 }
