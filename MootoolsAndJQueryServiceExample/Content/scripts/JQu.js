@@ -1,4 +1,5 @@
-﻿function OnPressMeSimpleJQuery() {
+﻿// Call a service that takes a simple string as input
+function simpleJQuery() {
     var args = new Object();
     args.stuff = 'Write Less Do More';
 
@@ -11,7 +12,8 @@
     });
 }
 
-function OnPressMeComplexJQuery() {
+// Call a service that takes an object with a sub object as an argument
+function complexJQuery() {
     var args = new Object();
     args.Name = 'Vince';
     args.Age = 23;
@@ -31,7 +33,8 @@ function OnPressMeComplexJQuery() {
     });
 }
 
-function OnPressMeListJQuery() {
+// Call a service that takes a list as an argument
+function listJQuery() {
     var args = new Object();
 
     args.listOfStuff = [];

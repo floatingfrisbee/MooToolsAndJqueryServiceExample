@@ -1,4 +1,5 @@
-﻿function OnPressMeSimpleMoo() {
+﻿// Call a service that takes a simple string as input
+function simpleMoo() {
     var args = new Object();
     args.stuff = 'A Compact JavaScript Framework';
 
@@ -13,7 +14,8 @@
     req.send();
 }
 
-function OnPressMeComplexMoo() {
+// Call a service that takes an object with a sub object as an argument
+function complexMoo() {
     var args = new Object();
     args.Name = 'Vince';
     args.Age = 34;
@@ -36,7 +38,8 @@ function OnPressMeComplexMoo() {
     req.send(JSON.encode(args));
 }
 
-function OnPressMeListMoo() {
+// Call a service that takes a list as an argument
+function listMoo() {
     var args = new Object();
 
     args.listOfStuff = [];
